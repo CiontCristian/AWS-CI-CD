@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reminders</title>
+</head>
+<body>
+<div th:switch="${reminders}">
+    <h2 th:case="null">No reminders!</h2>
+    <div th:case="*">
+        <h2>Reminders</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="reminder : ${reminders}">
+                <td th:text="${reminder.title}"></td>
+                <td th:text="${reminder.description}"></td>
+                <td th:date="${reminder.date}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <p><a href="/add-page">Add a new reminder</a></p>
+</div>
+</body>
+</html>

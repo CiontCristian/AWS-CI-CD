@@ -1,13 +1,13 @@
-package com.cicd.cicd_project;
+package com.cicd.reminderapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CicdProjectApplication {
+public class ReminderappApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CicdProjectApplication.class, args);
+        SpringApplication.run(ReminderappApplication.class, args);
     }
 
 }

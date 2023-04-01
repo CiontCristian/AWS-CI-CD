@@ -1,10 +1,10 @@
-package com.cicd.cicd_project;
+package com.cicd.reminderapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CicdProjectApplicationTests {
+class ReminderappApplicationTests {
 
     @Test
     void contextLoads() {
