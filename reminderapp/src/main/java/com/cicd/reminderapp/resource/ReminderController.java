@@ -26,10 +26,4 @@ public class ReminderController {
     public String showSaveReminderPage(Reminder reminder) {
         return "add";
     }
-
-    @PostMapping
-    public ResponseEntity<UUID> save(@RequestBody Reminder reminder){
-        return new ResponseEntity<>(reminderService.save(reminder), HttpStatus.CREATED);
-    }
-
 }
