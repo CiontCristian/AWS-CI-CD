@@ -14,19 +14,17 @@
             <tr>
                 <th>Title</th>
                 <th>Description</th>
-                <th>Date</th>
             </tr>
             </thead>
             <tbody>
             <tr th:each="reminder : ${reminders}">
                 <td th:text="${reminder.title}"></td>
                 <td th:text="${reminder.description}"></td>
-                <td th:date="${reminder.date}"></td>
             </tr>
             </tbody>
         </table>
     </div>
-    <p><a href="/add-page">Add a new reminder</a></p>
+    <p><a href="reminderapp-0.0.1-SNAPSHOT/add-page">Add a new reminder</a></p>
 </div>
 </body>
 </html>

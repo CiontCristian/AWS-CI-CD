@@ -9,7 +9,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
-import java.util.Date;
 import java.util.UUID;
 
 @Entity
@@ -22,5 +21,4 @@ public class Reminder implements Serializable {
     private UUID id;
     private String title;
     private String description;
-    private Date date;
 }
