@@ -24,7 +24,7 @@ public class ReminderController {
         return "index";
     }
 
-    @GetMapping("/reminderapp-0.0.1-SNAPSHOT/add-page")
+    @GetMapping("/add-page")
     public String showSaveReminderPage(Model model) {
         model.addAttribute("reminder", new Reminder());
         return "add-reminder";
